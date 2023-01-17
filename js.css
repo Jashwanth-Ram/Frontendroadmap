@@ -1,0 +1,79 @@
+body{
+    overflow-x: hidden;
+}
+.js-res{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right top,#C04848,#480048);
+}
+.jscard1{
+    position: relative;
+    width: 37%;
+    min-height: 55%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px  black,-2px -2px 10px  black ;
+    background: linear-gradient(to right top,#C04848,#480048);
+    top: 30%;
+    left: 6%;
+}
+.jscard1 h3,.jscard2 h3{
+    letter-spacing: 2px;
+    position: absolute;
+    font-size: 2.5rem;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+    color: rgba(135, 207, 235, 0.8);
+}
+.jscard1 h5{
+    width: 100%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    color: skyblue;
+
+}
+.jscard1 h5:hover, .jscard2 h5:hover{
+    text-decoration:underline;
+    padding-bottom: 1rem;
+    text-decoration-line: overline;
+    color: navajowhite;
+
+}
+#l1{
+    top:32%;
+}
+#l2{
+    top: 48%;
+}
+#l3{
+    top: 64%;
+}
+#l4{
+    top: 80%;
+}
+.jscard2{
+    position: relative;
+    width: 40%;
+    min-height: 55%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px  black,-2px -2px 10px  black ;
+    background: linear-gradient(to right top,#C04848,#480048);
+    top:-25%;
+    left: 54%;
+}
+.jscard2 h5{
+    width: 100%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    color: skyblue;
+
+}

@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;   
+}
+.video-bg{
+    position: absolute;
+    z-index: -1;
+}
+.trans{
+    width: 100%;
+    height: 100vh;
+}
+.head{
+    font-family: 'Noto Sans Mono', monospace;
+    width: 100%;
+    min-height: 13.5%;
+    position: absolute;
+    color: white;
+    background-color: transparent;
+}
+.head h1{
+    font-size: 2.2rem;
+    margin: 1.5%;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom,lightgray 50%,black);
+}
+.head h2{
+    font-size: 1.5rem;
+    transform: translate(4.4%);
+    margin-top: -1.5%;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top,lightgray 50%,black);
+}
+.head ul{
+    transform: translate(35%);
+    margin-top: -50px;
+}
+.head ul li{
+    display: inline-block;
+    margin:  0.5rem 2rem;
+}
+.head ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:gray;
+    transition: 0.2s ease-out;
+    font-weight: 600;
+}
+.head ul li a:hover{
+    background-color:rgba(128, 128, 128, 0.4);
+    padding: 0.4rem;
+    border-radius: 5px;
+    color:white;  
+}
+.dd{  
+    background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+    position: absolute;
+    top: 104px;
+    left: 65px;
+    display: none;
+    width: 12%;
+    border-radius:10px;
+    box-shadow: 4px 4px 10px -4px gray;
+    padding-bottom: 0.1rem;
+}
+.head ul li:hover .dd{
+        display: block;
+}
+.dd li a{
+    color: grey !important;
+}
+.dd li a:hover{
+    color: black !important;
+}
+
+.btn{
+    cursor:pointer;
+    font-size:1.2rem;
+    border: none;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-left: 21rem;
+    background-color: transparent;
+}
+.btn:hover{
+    border: none;
+    background-color:rgba(128, 128, 128, 0.4);
+    transform: scale(1.1);   
+}
+.hero-con{
+    position: relative;
+    width: 85%;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 60%;
+    text-transform: uppercase;
+}
+.hero-con h2,h3{
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.hero-con h2{
+    top: 13%;
+    left: 50%;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(40deg,gray,white);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: sans-serif;
+}
+.hero-con h3{
+    font-family: monospace;
+    top: 33%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+.hero-con a{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-decoration: none;
+}
+.hero-con button{
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1.1rem;
+    border-radius:30px;
+    transition: 0.2s ease-out;
+    background-image: linear-gradient(to right,#556270 ,rgba(255, 255, 255, 0.4),#556270);
+    background-size:200%;
+    box-shadow: 6px 6px 15px -7px gray,-6px -6px 15px -7px gray;
+ }
+ 
+ .hero-con button:hover{
+    transform: scale(0.9);
+    background-position: right;
+}
+.intro{
+    width: 100%;
+    height: 120vh;
+    background: rgba(224, 255, 255, 0.4);
+}
+.intro-con{
+    width: 98%;
+    height: 120vh;
+    margin: auto;
+    perspective: 800px;
+}
+.intro-con h2{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    position: relative;
+    top: 70px;
+    color: #767ca3;
+    text-shadow: 10px 10px 14px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+.card1{
+    background:linear-gradient(to right,#e54d26,#f16528);
+    width: 22%;
+    min-height: 55vh;
+    position: relative;
+    top: 220px;
+    left: 100px;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.525),-5px -5px 10px rgba(0, 0, 0, 0.525);
+    border-radius: 3px;
+    padding: 1rem;
+    transition: 0.8s ease-in-out;
+}
+.card2{
+    width: 22%;
+    min-height: 55vh;
+    position: relative;
+    top: -230px;
+    left: 550px;
+    background: linear-gradient(to right ,#264ee4,#2a65f1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.525),-5px -5px 10px rgba(0, 0, 0, 0.525);
+    border-radius: 3px;
+    padding: 1rem;
+    transition: 0.8s ease-in-out;
+}
+.card3{
+    width: 22%;
+    min-height: 55vh;
+    position: relative;
+    top: -680px;
+    left: 1000px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.525),-5px -5px 10px rgba(0, 0, 0, 0.525);
+    border-radius: 3px;
+    padding: 1rem;
+    transition: 0.8s ease-in-out;
+    background: linear-gradient(to right,#e5a126,#f0bf25);
+}
+.card1,.card2,.card3{
+    transform: rotateX(30deg);
+}
+.card1:hover,.card2:hover,.card3:hover{
+    transform: scale(1.2);
+    z-index: 1000;
+}
+.card1 img{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: -24%;
+}
+.card1 h3,.card2 h3,.card3 h3{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+}
+.card1 p, .card2 p,.card3 p{
+    position: absolute;
+    width: 90%;
+    top: 57%;
+    left: 50%;
+    font-size: 1.4rem;
+    text-align: justify;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    line-height: 40px;
+    color: white;
+}
+.card1 button,.card2 button,.card3 button{
+    font-family: monospace;
+    cursor: pointer;
+    position: absolute;
+    top: 82%;
+    font-weight: 600;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    transform: scale(1.8);
+    padding: 0.3rem;
+    border-radius: 2px;
+    background: transparent;
+    color: black;
+    border: 2px solid ;
+    transition: 0.5s ease-out;
+    box-shadow: -4px 4px ;
+}
+.card1 button:hover,.card2 button:hover,.card3 button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    box-shadow: -4px 4px rgba(255, 255, 255, 0.8);
+    transform: scale(1.7);
+}
+
+.card2 img{
+    width: 37%;
+    position: absolute;
+    left: 29%;
+    top: -23.8%;
+}
+
+.card3 img{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: -2.9%;
+}
+.html{
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(to right top,#e54d26,#f16528);
+}
+.html-con{
+    min-height: 150vh;
+    position: relative;
+    perspective: 800px;
+}
+.html h2{
+    width:23%;
+    top: 40px;
+    left: 6%;
+    position: absolute;
+    font-size: 6rem;
+    letter-spacing: 6px;
+    color: white;
+    text-shadow: 8px 8px 7px black;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    padding-left: 1rem;
+}
+.html .html-card1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    position: absolute;
+    width: 40%;
+    left: 13%;
+    top: 29%;
+    min-height: 20vh;
+    line-height: 60px;
+    color: white;
+    text-align: justify;
+    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+    padding: 1.5rem;
+    transition: 0.8s;
+    transform: rotateY(50deg);
+}
+.html-card1:hover{
+    transform: rotateY(0deg);
+    background: #000;
+}
+.html .html-card2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    position: absolute;
+    width: 40%;
+    left: 44%;
+    top: 29%;
+    min-height: 20vh;
+    line-height: 60px;
+    color: white;
+    text-align: justify;
+    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+    padding: 1.5rem;
+    transition: 0.8s;
+    transform: rotateY(-50deg);
+}
+.html-card2:hover{
+    transform: rotateY(0deg);
+    background: #000;
+}
+.html-card1:hover,.html-card2:hover{
+    z-index: 1000;
+}
+.css{
+    width: 100%;
+    height: 140vh;
+    background: linear-gradient(to right top,#264ee4,#2a65f1);
+    perspective: 800px;
+}
+.css h2{
+    width:16%;
+    top: 40px;
+    left: 75%;
+    position: relative;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 8px 8px 7px black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    padding-left: 1rem;
+}
+.css-card1{
+    color:white;
+    position: relative;
+    width: 30%;
+    border-radius:10px;
+    min-height: 45%;
+    top: 44%;
+    left: 32%;
+    transform: translate(-50%,-50%)
+               rotateY(40deg);
+    background: linear-gradient(to left,#41295a,#2F0743);
+    box-shadow: 6px 6px 10px black,-6px -6px 10px black;
+    z-index: 1;
+    transition: 0.7s linear;
+}
+.css-card1 p{
+    font-family: monospace;
+    font-weight: 600;
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+.css-card2{
+    color:black;
+    position: relative;
+    width: 30%;
+    border-radius:10px;
+    min-height: 45%;
+    left: 52%;
+    transform: translate(-50%,-50%)
+               rotateY(40deg)
+               scale(0.9);
+    background: linear-gradient(to right,#4ecdc4,#89fffd);
+    box-shadow: 6px 6px 10px black,-6px -6px 10px black;
+    z-index: 2;
+    text-align: left;
+    top: -1%;
+    transition: 0.7s linear;
+    
+}
+
+.css-card2 p{
+    font-family: monospace;
+    font-weight: 600;
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+.css-card3{
+    color:white;
+    position: relative;
+    width: 30%;
+    border-radius:10px;
+    min-height: 45%;
+    left: 66%;
+    transform: translate(-50%,-50%)
+               rotateY(40deg)
+               scale(0.8);
+    background: linear-gradient(to right,#000428,#004e92);
+    box-shadow: 6px 6px 10px black,-6px -6px 10px black;
+    z-index: 3;
+    text-align: left;
+    top: -46%;
+    transition: 0.9s linear;
+}
+
+.css-card3 p{
+    font-family: monospace;
+    font-weight: 600;
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+.css-card1:hover,.css-card2:hover,.css-card3:hover{
+    z-index: 1000;
+}
+.css-card1:hover{
+    transform: translate(-50%,-50%) translateY(-5%) rotateY(10deg);
+}
+.css-card2:hover{
+    transform: translate(-50%,-50%) translateY(-5%) rotateY(10deg) ;
+}.css-card3:hover{
+    transform: translate(-50%,-50%) translateY(-5%) rotateY(8deg);
+}
+.js{
+    width: 100%;
+    height: 135vh;
+    background: linear-gradient(to  right top,#f0bf25,#f0bf25);
+}
+.js h2{
+    position: relative;
+    width:43%;
+    top: 40px;
+    left: 3%;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 8px 8px 7px black;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+    padding-left: 1.5rem;
+    padding-bottom: 0.4rem;
+}
+.js-card1{
+    color: purple;
+    font-family: monospace;
+    min-height: 58%;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 13%;
+    border-radius: 10px;
+    background:linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    box-shadow: inset 8px 8px gray,inset 17px 17px white, inset 26px 26px gray,inset 35px 35px white,inset 44px 44px gray,inset 53px 53px white, 8px 8px white, 17px 17px black,  26px 26px white, 35px 35px black, 44px 44px white, 53px 53px black;
+}
+
+.js-card1 p{
+    font-weight: 600;
+    position: absolute;
+    width: 80%;
+    color: darkslategrey;
+    font-size: 2rem;
+    top: 10%;
+    left: 10%;
+    line-height: 50px;
+    text-align: justify;
+    padding: 1rem;
+}
+.foot{
+    width: 100%;
+    min-height: 27vh;
+    background-color: greenyellow;
+    color: black;
+    position: relative;
+}
+.foot h3{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.fa-twitter,.fa-instagram,.fa-facebook,.fa-github{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.5rem;
+    color: black;
+    transition: 0.3s ease-out;
+}
+.fa-twitter{
+    left: 35%;
+
+}
+.fa-instagram{
+    left: 45%;
+}
+.fa-facebook{
+    left: 55%;
+}
+.fa-github{
+    left: 65%;
+}
+.fa-twitter:hover,.fa-instagram:hover,.fa-facebook:hover,.fa-github:hover{
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: white;
+
+}
+
+

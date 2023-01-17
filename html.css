@@ -1,0 +1,71 @@
+body{
+    overflow-x: hidden;
+}
+.html-res{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right top,#0F2027,#203A43,#2C5364);
+}
+.htmlcard1{
+    position: relative;
+    width: 37%;
+    min-height: 60%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black,-2px -2px 15px black ;
+    background: linear-gradient(to right top,#0F2027,#203A43,#2C5364);
+    top: 30%;
+    left: 6%;
+}
+.htmlcard1 h3,.htmlcard2 h3{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+}
+.htmlcard1 h5,.htmlcard2 h5{
+    width: 100%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 1.5rem;
+    color: thistle;
+    transition: 0.2s linear;
+}
+#l1{
+    top:28%;
+}
+#l2{
+    top: 44%;
+}
+#l3{
+    top: 60%;
+}
+#l4{
+    top: 76%;
+}
+.htmlcard1 h5:hover, .htmlcard2 h5:hover{
+     color: white;
+     text-decoration:underline;
+     padding-bottom: 1rem;
+     text-decoration-line: overline;
+
+}
+.htmlcard2{
+    position: relative;
+    width: 37%;
+    min-height: 60%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black,-2px -2px 15px black ;
+    background: linear-gradient(to right top,#0F2027,#203A43,#2C5364);
+    top: -30%;
+    left: 57%;
+}
+.htmlcard2 h5{
+    left: 53%;
+}
+
+
+
